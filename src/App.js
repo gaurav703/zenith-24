@@ -3,15 +3,20 @@ import "./App.css";
 import Heropage from "./Components/heropage/heropage";
 import About from "./Components/about/about";
 import Mentor from "./Components/MentorsPage/mentor.js";
+import React from 'react';
+import Footer from "./Components/footer/Footer.jsx"
 
-function App() {
+
+const App = () => {
   return (
     <div className="App">
       <Heropage />
       <About />
       <Mentor />
-    </div>
-  );
+       <Footer/>
+    <div>
+  
+  )
 }
 
-export default App;
+export default App
