@@ -41,6 +41,18 @@
     font-size: 1rem;
 }
 
+#read-but {
+    display: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+}
+
+#dot {
+    display: none;
+}
+
 @media (max-width : 1350px) {
     .about-inner-div {
         background-image: url("../../Images/about_background.png");
@@ -52,8 +64,21 @@
 }
 
 @media (max-width : 600px) {
+    #more {
+        display: none;
+    }
+    #dot {
+        display: block;
+    }
+    #read-but {
+        display: block;
+    }
+    .about-main-div {
+        height: auto;
+    }
     .about-inner-div {
-        width: 95%;
+        width: 90%;
         height: max-content;
+        margin: 32px;
     }
 }
