@@ -25,7 +25,7 @@ export default function Navbar() {
           <li><a href='#events'>EVENTS</a></li>
           <li><a href='#our_team'>OUR TEAM</a></li>
           <li><a href='#register'>REGISTER</a></li>
-          <li><a href='#rbrochure'>Brochure</a></li>
+          <li><a href='#rbrochure'>BROCHURE</a></li>
         </ul>
         <img onClick={handleMenu} id='menu-logo' src={menu} alt='animage' />
       </div>
