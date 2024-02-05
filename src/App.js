@@ -27,7 +27,6 @@ function App() {
       </Routes>
       <Mentor />
       <Footer />
-      <Event />
     </div>
   );
 }
