@@ -1,11 +1,11 @@
 import React from "react";
 import "./footer.css";
-import logo from "../images/logo.png";
+import logo from "../Images/logo.png";
 import { Instagram } from "lucide-react";
 import { Mail } from "lucide-react";
 import { Phone } from "lucide-react";
 import { MapPin } from "lucide-react";
-import map from "../images/map.png";
+import map from "../Images/map.png";
 
 const Footer = () => {
   return (
@@ -59,7 +59,6 @@ const Footer = () => {
       <div className="map">
         <img src={map}></img>
       </div>
-      
     </div>
   );
 };
