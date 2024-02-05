@@ -1,10 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Heropage from "./Components/heropage/heropage";
-import About from "./Components/about/about";
-import Navbar from "./Components/navbar/navbar";
 import Loader from "./Components/loader/loader";
 import { useState, useEffect } from "react";
+import { Routes, Route } from "react-router";
+import Homepage from "./Components/homepage/homepage";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -17,9 +16,9 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
-      <Heropage />
-      <About />
+      <Routes>
+        <Route path="/" element={loading ? <Loader /> : <Homepage /> } ></Route>
+      </Routes>
     </div>
   );
 }
