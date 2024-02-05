@@ -76,11 +76,11 @@
 }
 
 .countdown p {
-    padding-left: 2rem;
+    padding-left: 32px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    gap: 0.3rem;
+    gap: 4px;
     margin-top: 135px;
     /* background-color: antiquewhite; */
 }
