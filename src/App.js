@@ -8,9 +8,8 @@ import Loader from "./Components/loader/loader";
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router";
 import Homepage from "./Components/homepage/homepage";
-import React from 'react';
-import Footer from "./Components/footer/Footer.jsx"
-import Event from "./Components/Event/Event.jsx"
+// import Footer from "./Components/footer/Footer.jsx";
+import Event from "./Components/Event/Event.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
