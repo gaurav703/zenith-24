@@ -1,18 +1,22 @@
 import React, { useState } from 'react';
 import "./navbar.css";
 import menu from "../../Images/menu.png";
+import close from "../../Images/closeMenu.png";
 
 export default function Navbar() {
 
   const [ c, setC ] = useState(0);
+  const [ imgSrc, setImgSrc ] = useState(menu);
  
   const handleMenu = () => {
     if (c === 0 ){
       document.getElementById("menu-ul").style.display = "flex";
+      setImgSrc(close);
       setC(1);
     }
     else {
       document.getElementById("menu-ul").style.display = "none";
+      setImgSrc(menu);
       setC(0);
     }
   }
@@ -27,7 +31,7 @@ export default function Navbar() {
           <li><a className="nav-but" href='#register'>REGISTER</a></li>
           <li><a className="nav-but" href='#rbrochure'>BROCHURE</a></li>
         </ul>
-        <img onClick={handleMenu} id='menu-logo' src={menu} alt='animage' />
+        <img onClick={handleMenu} id='menu-logo' src={imgSrc} alt='animage' />
       </div>
     </div>
   )

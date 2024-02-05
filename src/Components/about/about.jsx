@@ -1,22 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import "./about.css";
 
 export default function About() {
-  const [click, setClick] = useState(0);
+  // const [click, setClick] = useState(0);
 
-  const readButton = () => {
-    if (click === 0) {
-      document.getElementById("dot").style.display = "none";
-      document.getElementById("more").style.display = "block";
-      document.getElementById("read-but").innerHTML = "Read Less...";
-      setClick(1);
-    } else {
-      document.getElementById("dot").style.display = "block";
-      document.getElementById("more").style.display = "none";
-      document.getElementById("read-but").innerHTML = "Read More...";
-      setClick(0);
-    }
-  };
+  // const readButton = () => {
+  //   if (click === 0) {
+  //     document.getElementById("dot").style.display = "none";
+  //     document.getElementById("more").style.display = "block";
+  //     document.getElementById("read-but").innerHTML = "Read Less...";
+  //     setClick(1);
+  //   } else {
+  //     document.getElementById("dot").style.display = "block";
+  //     document.getElementById("more").style.display = "none";
+  //     document.getElementById("read-but").innerHTML = "Read More...";
+  //     setClick(0);
+  //   }
+  // };
 
   return (
     <div className="about-main-div">

@@ -5,6 +5,7 @@ import ball from "../../Images/ball.png";
 import logo from "../../Images/logo.png";
 import Atropos from "atropos/react";
 import Timer from "../timer/timer";
+import zenithLogo from "../../Images/zenith_logo.png";
 
 export default function Heropage() {
   return (
@@ -16,7 +17,7 @@ export default function Heropage() {
         </div>
       </div>
       <div className="head-heading">
-        <h1>Zenith'24</h1>
+        <img src={zenithLogo} alt="zenithlogo" />
       </div>
       <Atropos>
         <img data-atropos-offset="-8" id="player" src={player} alt="player"></img>

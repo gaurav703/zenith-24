@@ -26,7 +26,7 @@ const Timer = (props) => {
 
   return (
     <div className="timer">
-        <p>{days}:{hours}:{minutes}:{seconds}</p>
+        <p><span>{days}</span> <span>{hours}</span> <span>{minutes}</span> <span>{seconds}</span></p>
     </div>
   );
 };

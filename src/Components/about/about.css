@@ -37,9 +37,10 @@
 
 .about-info-div p {
     width: 70%;
-    text-align: center;
+    text-align: justify;
     color: white;
     font-size: 1rem;
+    line-height: 1.3rem;
 }
 
 #read-but {
@@ -86,6 +87,7 @@
         margin: 32px;
     }
     .about-info-div p {
-        width: 90%;
+        width: 85%;
+        padding: 0 1rem;
     }
 }
