@@ -140,55 +140,11 @@ ul {
   color: #fff;
   font-size: 0.8rem;
  }
-  @media (max-width:1030px) {
-    .parent{
-      height: 500px;
-    }
-  }
-  @media (max-width:1000px) {
-    .parent{
-      height: 700px;
-    }
-  }
-  @media (max-width:830px) {
-    .bottom p{
-      
-      font-size: 0.6rem;
-     }
-  }
-  @media (max-width:700px) {
-    .parent{
-      height: 850px;
-    }
-    .middle button{
-      margin-top: 10px;
-    }
-    .main_con .map{
-      height: 40%;
-    }
-    .bottom{
-      margin-top: 100px;
-    }
-    .main_con .map{
-      margin-top: 30px;
-    }
 
+
+ @media (max-width:1000px){
+  .parent{
+    height: 700px;
   }
-  @media (max-width:620px) {
-    
-    .bottom p{
-      font-size: 0.5rem;
-    }
-  }
-  @media (max-width:550px) {
-    
-    .bottom p{
-      font-size: 0.4rem;
-      width: 130%;
-      margin-left: 25px;
-    }
-    .middle .social{
-      margin-left: 0px;
-    }
-  }
+ }
 

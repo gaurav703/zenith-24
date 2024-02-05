@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import logo from "../images/logo.png";
+import logo2 from "../images/logo2.png";
 import { Instagram } from "lucide-react";
 import { Mail } from "lucide-react";
 import { Phone } from "lucide-react";
@@ -14,8 +14,8 @@ const Footer = () => {
     <div className="parent">
       <div className="main_con">
         <div className="logo">
-        <h2>Zenith</h2>
-          <img src={logo}></img>
+        
+          <img src={logo2}></img>
           
         </div>
         <div className="middle">
@@ -74,6 +74,31 @@ const Footer = () => {
         </div>
       </div>
       <div className="bottom">
+      <div className="social">
+            <ul className="ulsocila">
+              <li>
+                <a href="https://www.instagram.com/zenith_sggs?igsh=djNob2lwbXg2aGdi">
+                  <Instagram />
+                </a>
+              </li>
+              <li>
+                <a href="mailto:zenith@sggs.ac.in">
+                  
+                  <Mail />
+                </a>
+              </li>
+              <li>
+                <a href="https://sggszenith.in/tel:+919359502953">
+                  <Phone />
+                </a>
+              </li>
+              <li>
+                <a href="https://goo.gl/maps/qdH2ab7UjYGfyPJs6">
+                  <MapPin />
+                </a>
+              </li>
+            </ul>
+          </div>
       <hr />
       <p>©2024 Zenith Web Team | All Rights Reserved</p>
       </div>

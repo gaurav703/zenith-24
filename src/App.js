@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <Event/>
-    <Footer/>
+    {/* <Footer/> */}
     </div>
   )
 }

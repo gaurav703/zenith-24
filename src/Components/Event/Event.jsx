@@ -2,13 +2,15 @@ import React, { useState,useEffect } from "react";
 import "./Event.css";
 // import cricket from "./cricket.jpg";
 import Model from "./Model";
-import Football from "../images/Football.svg";
-import chess from "../images/chess.svg";
-import volleyball from "../images/volleyball.svg";
-import cricketsvg from "../images/cricket.svg";
-import kabaddi from "../images/kabaddi.svg";
+import Football from "../images/foot.png";
+import chess from "../images/chess.png";
+import volleyball from "../images/volley.png";
+import cricketsvg from "../images/cricket.png";
+import kabaddi from "../images/kabaddi.png";
 import basketball from "../images/basketball.svg";
-import handball from "../images/handball.svg";
+import basketball2 from "../images/basket.png";
+import handball from "../images/hand.png";
+import download from "../images/download.png"
 
 
 
@@ -20,7 +22,7 @@ const sportsData = [
   { image: volleyball, name: "Volleyball",boys:"1200₹",girls:"1200₹" },
   { image: kabaddi, name: "Kabaddi" ,boys:"1200₹",girls:"1200₹"},
   { image: handball, name: "Handball",boys:"1200₹",girls:"1200₹" },
-  { image: basketball, name: "Basketball",boys:"1200₹",girls:"1200₹" },
+  { image: basketball2, name: "Basketball",boys:"1200₹",girls:"1200₹" },
 ];
 const Event = () => {
   const [Pop, setPop] = useState(false);
@@ -39,18 +41,28 @@ const Event = () => {
             </div>
             <h2>{sport.name}</h2>
             <div className="info">
-              <p>
-                Entry Fee(Boys): ₹2500
+            <h2>{sport.name}</h2>
+              <p className="fees">
+                Entry Fee: </p>
+                <div className="price">
+                <p>
+                Boys: ₹2500
                 <br />
-                Entry Fee(Girls): X
-              </p>
+                Girls: X</p>  </div>
+             
+             <div className="btns">
               <button className="btn" onClick={() => setPop(true)}>
                 View More
               </button>
+              <button className="download">
+                <img src={download}></img>
+                
+              </button>
+              </div>
             </div>
           </div>
         ))}
-        <div className="pop">{Pop && <Model onClose={() => setPop(false)} />}</div>
+        <div className="pop">{Pop && <Model  onClose={() => setPop(false)} />}</div>
       </div>
     </div>
   );

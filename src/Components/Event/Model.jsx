@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./Model.css";
 import { X } from "lucide-react";
 
-const Model = ({ onClose }) => {
+const Model= ( { onClose }) => {
   return (
    <div className="Main">
     <div className="pop_up" id="pop_up">
@@ -11,7 +11,7 @@ const Model = ({ onClose }) => {
           <X />
         </button>
       </div>
-      <h2>Cricket</h2>
+      <h2>football</h2>
       <h3>Entry Fee(Boys): ₹1500</h3>
       <h3>Entry Fee(Girls): ₹1200</h3>
       <p>
