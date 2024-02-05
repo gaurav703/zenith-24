@@ -1,0 +1,81 @@
+
+
+.pop_up{
+    padding: 40px;
+    width: 500px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(1);
+    border-radius: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+   flex-direction: column;
+   position: absolute;
+z-index: 333;
+transition: transform 0.5s,top 0.5s;
+}
+
+.pop_up h2{
+    color: orange;
+}
+
+.pop_up .Reg{
+    width: 25%;
+    margin-top: 50px;
+    background: yellow;
+    border: 0;
+    outline: 0;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    
+}
+.pop_up .btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.x{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.9rem;
+    color: red;
+    transition: .5s ease-in-out;
+}
+.x:hover{
+    scale: 2;
+}
+
+@media (max-width:650px){
+   .pop_up{
+    width: 400px;
+    padding: 20px;
+   }
+   
+  }
+  @media (max-width:500px){
+    .pop_up{
+     width: 300px;
+     padding: 20px;
+    }
+    .pop_up .Reg{
+        width: 36%;
+       }
+   }
+
+   @media (max-width:400px){
+    .pop_up{
+     width: 260px;
+     padding: 20px;
+    }
+    .pop_up .Reg{
+        width: 40%;
+       }
+   }
