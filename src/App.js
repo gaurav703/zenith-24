@@ -20,13 +20,11 @@ function App() {
 
   return (
     <div className="App">
-      <Heropage />
-      <About />
-      <Mentor />
-      <Footer />
       <Routes>
         <Route path="/" element={loading ? <Loader /> : <Homepage />}></Route>
       </Routes>
+      <Mentor />
+      <Footer />
     </div>
   );
 }
