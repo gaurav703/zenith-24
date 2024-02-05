@@ -1,6 +1,5 @@
 import React from "react";
 import "./heropage.css";
-import Navbar from "../navbar/navbar";
 import player from "../../Images/player.png";
 import ball from "../../Images/ball.png";
 import logo from "../../Images/logo.png";
@@ -10,7 +9,6 @@ import Timer from "../timer/timer";
 export default function Heropage() {
   return (
     <div className="heropage-main-div">
-      <Navbar />
       <div className="logo-black-div">
         <div className="logo-black-inner-div">
           <img src={logo} alt="logo" />

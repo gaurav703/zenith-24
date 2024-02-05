@@ -26,9 +26,7 @@ export default function About() {
           <p>
             We bring you Zenith'23, the 8th edition of our college sports
             extravaganza with the conviction to go beyond Zenith'22. The Ignited
-            spirits shall be unleashed <span id="dot">...</span>
-            <span id="more">
-              and we shall "DEVOUR THE VICTORY". Last year we hosted this event
+            spirits shall be unleashed and we shall "DEVOUR THE VICTORY". Last year we hosted this event
               in the heated month of April. Best student athletes from across
               the state will converge to perspire and showcase their talents
               with competing for the title of being the best. With a wide
@@ -38,10 +36,6 @@ export default function About() {
               track and field, this is a competition you won't want to miss.
               Join us as we come together to celebrate the passion, dedication,
               and hard work of these exceptional young athletes.
-            </span>
-            <button onClick={readButton} id="read-but">
-              Read More...
-            </button>
           </p>
         </div>
       </div>
