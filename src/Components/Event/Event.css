@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+body{
+  background: #212121;
+}
+.main-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 0;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #212121;
+  min-height: 100vh;
+  padding-left: 60px;
+  padding-right: 60px;
+  gap: 90px;
+}
+.heading{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.heading h1{
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  color: orange;
+}
+@media (max-width:650px){
+  .heading h1{
+    font-size: 3.0rem;
+    padding-left: 15px;
+  }
+}
+
+
+.card1 {
+  position: relative;
+  width: 220px;
+  height: 321px;
+  background: mediumturquoise;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card1 h2{
+  font-size: 1.6rem;
+}
+.card1 .img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: orange;
+}
+.card1 .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.card1::before,
+.card1::after {
+  position: absolute;
+  content: " ";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(110, 130, 135);
+  transition: all 0.5s;
+}
+
+.card1::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card1::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+}
+
+.card1:hover::before,
+.card1:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.card1 .info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+  border-radius: 15px;
+  background-color: rgb(110, 130, 135);
+  
+  z-index: 1;
+  transition: all 0.5s ease-in;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+.card1 .info p {
+  margin-top: 50px;
+  font-size: .9rem;
+  margin-bottom: 40px;
+
+}
+
+.card1:hover .info {
+  opacity: 1;
+  /* transition-delay: 0.5s ; */
+}
+.card1 .info .btn {
+  border: 0;
+  outline: 0;
+  width: 130px;
+  position: relative;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #a2a299;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.wrapper .pop{
+ 
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+position: absolute;
+
+}

@@ -1,5 +1,4 @@
-.main_con {
-  margin-top: 60px;
+.parent{
   width: 100%;
   height: 445px;
   background-image: url(../images/background.png);
@@ -7,36 +6,48 @@
   background-size: cover;
   background-position: center;
   display: flex;
-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.main_con {
+  
+  width: 100%;
+  height: 80%;
+ 
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-
 }
 
 .main_con .logo {
   width: 280px;
   height: auto;
   top: 128px;
-  margin-left: 40px;
+  margin-left: 0px;
   left: 108px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .main_con .logo img {
   width: 100%;
   height: 100%;
 }
 .main_con .logo h2{
+ 
     color: #fff;
-    position: absolute;
+    position: relative;
 }
 .middle{
     width: 400px;
     /* background-color: aqua;  */
     display: flex;
     flex-direction: column;
-    padding-top: 110px;
+    
     align-items: center;
     
 }
@@ -81,12 +92,13 @@ ul {
   
   
   .middle .social{
-    width: 80%;
+    width: 100%;
     height: 40px;
     /* background-color: beige; */
     margin-top: 30px;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
   
   }
   .middle .social ul a{
@@ -96,15 +108,87 @@ ul {
     color: orange;
   }
   .main_con .map{
-    width:280px;
-    background-color: bisque;
-    height: 50%;
+   
     overflow: hidden;
     border-radius: 20px;
-    height: auto;
+    height: 50%;
+    width: 300px;
+    position: relative;
  
   }
-  .main_con .map img{
-    width: 100%;
+  
+  .main_con .map iframe{
     height: 100%;
+    position: absolute;
+    border: 0;
+    width: 100%;
+    outline: 0;
   }
+ .bottom{
+  width: 30%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .bottom hr{
+  width: 100%;
+  
+ }
+ .bottom p{
+  color: #fff;
+  font-size: 0.8rem;
+ }
+  @media (max-width:1030px) {
+    .parent{
+      height: 500px;
+    }
+  }
+  @media (max-width:1000px) {
+    .parent{
+      height: 700px;
+    }
+  }
+  @media (max-width:830px) {
+    .bottom p{
+      
+      font-size: 0.6rem;
+     }
+  }
+  @media (max-width:700px) {
+    .parent{
+      height: 850px;
+    }
+    .middle button{
+      margin-top: 10px;
+    }
+    .main_con .map{
+      height: 40%;
+    }
+    .bottom{
+      margin-top: 100px;
+    }
+    .main_con .map{
+      margin-top: 30px;
+    }
+
+  }
+  @media (max-width:620px) {
+    
+    .bottom p{
+      font-size: 0.5rem;
+    }
+  }
+  @media (max-width:550px) {
+    
+    .bottom p{
+      font-size: 0.4rem;
+      width: 130%;
+      margin-left: 25px;
+    }
+    .middle .social{
+      margin-left: 0px;
+    }
+  }
+
