@@ -1,35 +1,39 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Event.css";
-// import cricket from "./cricket.jpg";
 import Model from "./Model";
 import Football from "../images/foot.png";
 import chess from "../images/chess.png";
 import volleyball from "../images/volley.png";
 import cricketsvg from "../images/cricket.png";
 import kabaddi from "../images/kabaddi.png";
-import basketball from "../images/basketball.svg";
 import basketball2 from "../images/basket.png";
 import handball from "../images/hand.png";
-import download from "../images/download.png"
-
-
+import download from "../images/download.png";
 
 const sportsData = [
-  { image: cricketsvg, name: "Cricket",boys:"1200₹",girls:"1200₹" },
-  { image: Football, name: "Football",boys:"1200₹",girls:"1200₹" },
-  { image: Football, name: "RingFootball",boys:"1200₹",girls:"1200₹" },
-  { image: chess, name: "Chess",boys:"1200₹",girls:"1200₹" },
-  { image: volleyball, name: "Volleyball",boys:"1200₹",girls:"1200₹" },
-  { image: kabaddi, name: "Kabaddi" ,boys:"1200₹",girls:"1200₹"},
-  { image: handball, name: "Handball",boys:"1200₹",girls:"1200₹" },
-  { image: basketball2, name: "Basketball",boys:"1200₹",girls:"1200₹" },
+  { image: cricketsvg, name: "Cricket", boys: "Boys : 1200₹", girls: "Girls : 1200₹",contact:"Vivek: 9359502953 , Gaurav : 9757398688" },
+  { image: Football, name: "Football",  boys: "Boys : 1200₹", girls: "Girls : 1200₹",contact:"Vivek: 9359502953 , Gaurav : 9757398688" },
+  { image: Football, name: "RingFootball", boys: "Boys : 1200₹", girls: "Girls : 1200₹",contact:"Vivek: 9359502953 , Gaurav : 9757398688" },
+  { image: chess, name: "Chess",  boys: " Quad : 1200₹", girls: "Solo : 1200₹" ,contact:"Vivek: 9359502953 , Gaurav : 9757398688"},
+  { image: volleyball, name: "Volleyball", boys: "Boys : 1200₹", girls: "Girls : 1200₹",contact:"Vivek: 9359502953 , Gaurav : 9757398688"},
+  { image: kabaddi, name: "Kabaddi",  boys: "Boys : 1200₹", girls: "Girls : 1200₹",contact:"Vivek: 9359502953 , Gaurav : 9757398688" },
+  { image: handball, name: "Handball", boys: "Boys : 1200₹", girls: "Girls : 1200₹",contact:"Vivek: 9359502953 , Gaurav : 9757398688" },
+  { image: basketball2, name: "Basketball", boys: "Boys : 1200₹", girls: "Girls : 1200₹",contact:"Vivek: 9359502953 , Gaurav : 9757398688" },
 ];
+
 const Event = () => {
   const [Pop, setPop] = useState(false);
-   
-  
+  const [selectedSport, setSelectedSport] = useState(null);
+
+  const handleViewMore = (sport) => {
+    setSelectedSport(sport);
+    setPop(true);
+  };
+
+
   return (
     <div className="main-container">
+       <div className={Pop ? "blur-background" : ""}></div>
       <div className="heading">
         <h1>Events</h1>
       </div>
@@ -41,28 +45,32 @@ const Event = () => {
             </div>
             <h2>{sport.name}</h2>
             <div className="info">
-            <h2>{sport.name}</h2>
-              <p className="fees">
-                Entry Fee: </p>
-                <div className="price">
+              <h2>{sport.name}</h2>
+              <p className="fees">Entry Fee: </p>
+              <div className="price">
                 <p>
-                Boys: ₹2500
-                <br />
-                Girls: X</p>  </div>
-             
-             <div className="btns">
-              <button className="btn" onClick={() => setPop(true)}>
-                View More
-              </button>
-              <button className="download">
-                <img src={download}></img>
-                
-              </button>
+                  {sport.boys}
+                  <br />
+                  {sport.girls}
+                </p>
+              </div>
+              <div className="btns">
+                <button className="btn" onClick={() => handleViewMore(sport)}>
+                  View More
+                </button>
+                <button
+                  id="downloadBtn"
+                  value="download"
+                  className="download"
+                  onClick={() => console.log("Download logic goes here")}
+                >
+                  <img src={download} alt="Download" />
+                </button>
               </div>
             </div>
           </div>
         ))}
-        <div className="pop">{Pop && <Model  onClose={() => setPop(false)} />}</div>
+        <div className="pop">{Pop && <Model sport={selectedSport} onClose={() => setPop(false)} />}</div>
       </div>
     </div>
   );
