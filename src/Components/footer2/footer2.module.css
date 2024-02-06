@@ -1,0 +1,41 @@
+.whole {
+    width: 100%;
+    height: 445px;
+    background-image: url(../Images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+
+.left,
+.middle,
+.right {
+    padding-top: 2rem;
+    width: 33.33vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* .left {
+    padding-top: 4rem;
+} */
+
+.img {
+    width: 200px;
+    height: auto;
+}
+
+.up {
+    display: flex;
+    flex-direction: row;
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+}
