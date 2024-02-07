@@ -16,44 +16,57 @@ import Footer from "../footer2/footer2.jsx";
 
 const sportsData = [
   {
-    image: "../Images/foot.png",
+    image:
+      "https://res.cloudinary.com/dqki29mbg/image/upload/v1707291522/Zenith-24/sbpqn8yhyngti5f962wu.png",
     name: "Cricket",
     boys: "1200₹",
     girls: "1200₹",
   },
   {
-    image: "../Images/foot.png",
+    image:
+      "https://res.cloudinary.com/dqki29mbg/image/upload/v1707291523/Zenith-24/dloivnlx5otsmcemg7ae.svg",
     name: "Football",
     boys: "1200₹",
     girls: "1200₹",
   },
   {
-    image: "../Images/foot.png",
+    image:
+      "https://res.cloudinary.com/dqki29mbg/image/upload/v1707291524/Zenith-24/s8mpgfgpnyyxtavtzkti.png",
     name: "RingFootball",
     boys: "1200₹",
     girls: "1200₹",
   },
-  { image: "../Images/foot.png", name: "Chess", boys: "1200₹", girls: "1200₹" },
   {
-    image: "../Images/foot.png",
+    image:
+      "https://res.cloudinary.com/dqki29mbg/image/upload/v1707291521/Zenith-24/nyy5xalblceohmcsm4xr.png",
+    name: "Chess",
+    boys: "1200₹",
+    girls: "1200₹",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dqki29mbg/image/upload/v1707291523/Zenith-24/dloivnlx5otsmcemg7ae.svg",
     name: "Volleyball",
     boys: "1200₹",
     girls: "1200₹",
   },
   {
-    image: "../Images/foot.png",
+    image:
+      "https://res.cloudinary.com/dqki29mbg/image/upload/v1707291525/Zenith-24/wbzwnoxcbnim76xszjl6.png",
     name: "Kabaddi",
     boys: "1200₹",
     girls: "1200₹",
   },
   {
-    image: "../Images/foot.png",
+    image:
+      "https://res.cloudinary.com/dqki29mbg/image/upload/v1707291524/Zenith-24/uuia3zkvo2abzk0fot5d.png",
     name: "Handball",
     boys: "1200₹",
     girls: "1200₹",
   },
   {
-    image: "../Images/foot.png",
+    image:
+      "https://res.cloudinary.com/dqki29mbg/image/upload/v1707291521/Zenith-24/iul861t7dxfud0onbh7t.png",
     name: "Basketball",
     boys: "1200₹",
     girls: "1200₹",
