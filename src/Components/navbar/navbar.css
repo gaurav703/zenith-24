@@ -10,10 +10,6 @@
     transition: top 0.3s;
 }
 
-.aaa.hidden {
-    top: -80px;
-}
-
 .navbar-inner-div {
     width: 50%;
     height: 100%;

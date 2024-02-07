@@ -6,7 +6,7 @@ import Navbar from "../navbar/navbar.jsx";
 export default function Homepage() {
   return (
     <div>
-    <Navbar />
+        <Navbar />
         <Heropage />
         <About />
     </div>
