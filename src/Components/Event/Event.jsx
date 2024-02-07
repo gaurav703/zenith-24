@@ -107,7 +107,7 @@ const Event = () => {
                     View More
                   </button>
                   <button className="download">
-                    {/* <img src="../Images/foot.png"></img> */}
+                    <img src="../Images/foot.png"></img>
                   </button>
                 </div>
               </div>
