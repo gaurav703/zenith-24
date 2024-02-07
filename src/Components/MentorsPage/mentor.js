@@ -72,10 +72,10 @@ const Mentor = () => {
           </div>
           <div className="content">
             <h2>DR. MANESH.B.KOKARE</h2>
-            <h2>Director, SGGSIE&T</h2>
+            <h2 className="title2">Director, SGGSIE&T</h2>
             <p>
               ZENITH is an exhilarating State Level Sports event of SGGSIE&T,
-              it’s a platform for every student to showcase their talents and
+              it&apos;s a platform for every student to showcase their talents and
               athletic skills. The beauty of it lies in its ability to bring
               together the entire sports enthusiasts and student community,
               since it is completely organised by students. In an era where
@@ -93,7 +93,7 @@ const Mentor = () => {
           </div>
           <div className="content">
             <h2>Mr. S. B. Dethe</h2>
-            <h2>Dean (Students Affairs), SGGSIE&T</h2>
+            <h2 className="title2">Dean (Students Affairs), SGGSIE&T</h2>
             <p>
               Zenith is a state level sports event organized by the students of
               SGGSIE&T consisting of various sports like basketball, football,
@@ -111,7 +111,7 @@ const Mentor = () => {
           </div>
           <div className="content">
             <h2>Prof. Bhaskar Kadam</h2>
-            <h2>Sports Incharge, SGGSIE&T</h2>
+            <h2 className="title2">Sports Incharge, SGGSIE&T</h2>
             <p>
               As a sports incharge, it's my duty to encourage athletes to
               praticipate in such events. This event is bound to enhance your
@@ -127,7 +127,7 @@ const Mentor = () => {
           </div>
           <div className="content">
             <h2>Late Prof. R. B. Reddy</h2>
-            <h2>Former Sports Incharge, SGGSIE&T</h2>
+            <h2 className="title2">Former Sports Incharge, SGGSIE&T</h2>
             <p>
               The previous Sports Incharge of the institute who has helped all
               the student athletes in their preparation and has set the bar sky

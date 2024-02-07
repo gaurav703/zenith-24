@@ -1,93 +1,58 @@
-.about-main-div {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.whole {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-image: url("../../Images/about_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 8vw 8rem 8vw;
+  margin: 4rem 20vw;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 20px;
+  justify-content: center;
 }
-
-.about-inner-div {
-    background-image: url("../../Images/players.png"), url("../../Images/about_background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 25px;
-    width: 70%;
-    height: 80%;
-    display: flex;
-    justify-content: flex-end;
+.img {
+  width: 545;
+  height: 276px;
+  margin: -190px 0 0 -42vw;
 }
-
-.about-info-div {
-    width: 70%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-info-div h1 {
-    font-size: 2rem;
+h1{
     color: #FF8503;
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
 }
-
-.about-info-div p {
-    width: 70%;
+@media (max-width: 1000px) {
+  .whole {
+    margin: 4rem 14vw;
+  }
+  .img {
+    width: 545;
+    height: 276px;
+    margin: -190px 0 0 0;
+  }
+}
+@media (max-width: 600px) {
+  .whole {
+    margin: 4rem 2rem;
+    font-size: 14px;
     text-align: justify;
-    color: white;
-    font-size: 1rem;
-    line-height: 1.3rem;
+    align-items: center;
+  }
+  .img {
+    width: 80vw;
+    height: auto;
+    object-fit: contain;
+  }
 }
-
-#read-but {
-    display: none;
-    border: none;
-    background-color: transparent;
-    color: white;
-    font-size: 1rem;
+@media (max-width: 500px) {
+  .whole {
+    margin: 4rem 2rem;
+    font-size: 14px;
+    text-align: justify;
+    padding: 4rem 8vw 6rem 8vw;
+  }
 }
-
-#dot {
-    display: none;
-}
-
-@media (max-width : 1350px) {
-    .about-inner-div {
-        background-image: url("../../Images/about_background.png");
-    }
-    .about-info-div {
-        width: 100%;
-        height: 100%;
-    }
-    .about-info-div p {
-        width: 80%;
-    }
-}
-
-@media (max-width : 600px) {
-    #more {
-        display: none;
-    }
-    #dot {
-        display: block;
-    }
-    #read-but {
-        display: block;
-    }
-    .about-main-div {
-        height: auto;
-    }
-    .about-inner-div {
-        width: 90%;
-        height: max-content;
-        margin: 32px;
-    }
-    .about-info-div p {
-        width: 85%;
-        padding: 0 1rem;
-    }
+@media (max-width: 400px) {
+  .whole {
+    margin: 3rem 2rem;
+  }
 }
