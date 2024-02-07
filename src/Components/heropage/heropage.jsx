@@ -1,7 +1,7 @@
 import React from "react";
 import "./heropage.css";
-import player from "../../Images/player.png";
-import ball from "../../Images/ball.png";
+// import player from "../../Images/player.png";
+// import ball from "../../Images/ball.png";
 // import logo from "../../Images/logo.png";
 import Atropos from "atropos/react";
 import Timer from "../timer/timer";
@@ -17,10 +17,15 @@ export default function Heropage() {
         <img
           data-atropos-offset="-8"
           id="player"
-          src={player}
+          src="../../Images/player.png"
           alt="player"
         ></img>
-        <img data-atropos-offset="20" id="ball" src={ball} alt="ball"></img>
+        <img
+          data-atropos-offset="20"
+          id="ball"
+          src="../../Images/player.png"
+          alt="ball"
+        ></img>
       </Atropos>
       <div className="countdown">
         <Timer date="March 14 2024" />
