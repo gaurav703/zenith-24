@@ -2,27 +2,67 @@ import React, { useState, useEffect } from "react";
 import "./Event.css";
 import Model from "./Model";
 // import Football from "../Images/foot.png";
-import chess from "../Images/chess.png";
-import volleyball from "../Images/volley.png";
-import cricketsvg from "../Images/cricket.png";
-import kabaddi from "../Images/kabaddi.png";
-import Football2 from "../Images/foot2.png";
-import basketball from "../Images/basketball.svg";
-import basketball2 from "../Images/basket.png";
-import handball from "../Images/hand.png";
+// import chess from "../Images/chess.png";
+// import volleyball from "../Images/volley.png";
+// import cricketsvg from "../Images/cricket.png";
+// import kabaddi from "../Images/kabaddi.png";
+// import Football2 from "../Images/foot2.png";
+// // import basketball from "../Images/basketball.svg";
+// import basketball2 from "../Images/basket.png";
+// import handball from "../Images/hand.png";
 import download from "../Images/download.png";
 import Navbar from "../navbar/navbar.jsx";
 import Footer from "../footer2/footer2.jsx";
 
 const sportsData = [
-  { image: cricketsvg, name: "Cricket", boys: "1200₹", girls: "1200₹" },
-  { image: Football2, name: "Football", boys: "1200₹", girls: "1200₹" },
-  { image: Football2, name: "RingFootball", boys: "1200₹", girls: "1200₹" },
-  { image: chess, name: "Chess", boys: "1200₹", girls: "1200₹" },
-  { image: volleyball, name: "Volleyball", boys: "1200₹", girls: "1200₹" },
-  { image: kabaddi, name: "Kabaddi", boys: "1200₹", girls: "1200₹" },
-  { image: handball, name: "Handball", boys: "1200₹", girls: "1200₹" },
-  { image: basketball2, name: "Basketball", boys: "1200₹", girls: "1200₹" },
+  {
+    image: "../Images/chess.png",
+    name: "Cricket",
+    boys: "1200₹",
+    girls: "1200₹",
+  },
+  {
+    image: "../Images/chess.png",
+    name: "Football",
+    boys: "1200₹",
+    girls: "1200₹",
+  },
+  {
+    image: "../Images/chess.png",
+    name: "RingFootball",
+    boys: "1200₹",
+    girls: "1200₹",
+  },
+  {
+    image: "../Images/chess.png",
+    name: "Chess",
+    boys: "1200₹",
+    girls: "1200₹",
+  },
+  {
+    image: "../Images/chess.png",
+    name: "Volleyball",
+    boys: "1200₹",
+    girls: "1200₹",
+  },
+  {
+    image: "../Images/chess.png",
+    name: "Kabaddi",
+    boys: "1200₹",
+    girls: "1200₹",
+  },
+  {
+    image: "../Images/chess.png",
+    name: "Handball",
+    boys: "1200₹",
+    girls: "1200₹",
+  },
+  {
+    image: "../Images/chess.png",
+    name: "Basketball",
+    boys: "1200₹",
+    girls: "1200₹",
+  },
 ];
 
 const Event = () => {
