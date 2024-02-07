@@ -1,7 +1,7 @@
 .parent {
   width: 100%;
   height: 445px;
-  background-image: url(../Images/background.png);
+  /* background-image: url(../Images/background.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

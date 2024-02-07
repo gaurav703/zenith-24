@@ -1,7 +1,7 @@
 .heropage-main-div {
     width: 100vw;
     height: 100vh;
-    background-image: url("../../Images/heropage_background.png");
+    /* background-image: url("../../Images/heropage_background.png"); */
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
