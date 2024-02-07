@@ -7,7 +7,7 @@ import Model from "./Model";
 // import cricketsvg from "../Images/cricket.png";
 // import kabaddi from "../Images/kabaddi.png";
 // import Football2 from "../Images/foot2.png";
-// // import basketball from "../Images/basketball.svg";
+// import basketball from "../Images/basketball.svg";
 // import basketball2 from "../Images/basket.png";
 // import handball from "../Images/hand.png";
 // import download from "../Images/download.png";
@@ -16,49 +16,44 @@ import Footer from "../footer2/footer2.jsx";
 
 const sportsData = [
   {
-    image: "../Images/chess.png",
+    image: "../Images/foot.png",
     name: "Cricket",
     boys: "1200₹",
     girls: "1200₹",
   },
   {
-    image: "../Images/chess.png",
+    image: "../Images/foot.png",
     name: "Football",
     boys: "1200₹",
     girls: "1200₹",
   },
   {
-    image: "../Images/chess.png",
+    image: "../Images/foot.png",
     name: "RingFootball",
     boys: "1200₹",
     girls: "1200₹",
   },
+  { image: "../Images/foot.png", name: "Chess", boys: "1200₹", girls: "1200₹" },
   {
-    image: "../Images/chess.png",
-    name: "Chess",
-    boys: "1200₹",
-    girls: "1200₹",
-  },
-  {
-    image: "../Images/chess.png",
+    image: "../Images/foot.png",
     name: "Volleyball",
     boys: "1200₹",
     girls: "1200₹",
   },
   {
-    image: "../Images/chess.png",
+    image: "../Images/foot.png",
     name: "Kabaddi",
     boys: "1200₹",
     girls: "1200₹",
   },
   {
-    image: "../Images/chess.png",
+    image: "../Images/foot.png",
     name: "Handball",
     boys: "1200₹",
     girls: "1200₹",
   },
   {
-    image: "../Images/chess.png",
+    image: "../Images/foot.png",
     name: "Basketball",
     boys: "1200₹",
     girls: "1200₹",
@@ -99,7 +94,7 @@ const Event = () => {
                     View More
                   </button>
                   <button className="download">
-                    <img src="../Images/download.png"></img>
+                    <img src="../Images/foot.png"></img>
                   </button>
                 </div>
               </div>
