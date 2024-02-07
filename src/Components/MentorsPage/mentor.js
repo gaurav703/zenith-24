@@ -71,14 +71,18 @@ const Mentor = () => {
             <img src={director} className="image"></img>
           </div>
           <div className="content">
-            <h2>Dr. Yashwant V. Joshi</h2>
+            <h2>DR. MANESH.B.KOKARE</h2>
             <h2>Director, SGGSIE&T</h2>
             <p>
-              Greetings Athletes!! SGGS is a prestigious gov institute in
-              Maharashtra and The state-level sports tournament Zenith has been
-              a crown jewel of the institute since 2016. I send a warm welcome
-              to all the sport enthusiasts in the State to participate in this
-              Zealous and pumped up edition of Zenith.
+              ZENITH is an exhilarating State Level Sports event of SGGSIE&T,
+              it’s a platform for every student to showcase their talents and
+              athletic skills. The beauty of it lies in its ability to bring
+              together the entire sports enthusiasts and student community,
+              since it is completely organised by students. In an era where
+              sedentary lifestyles and academic pressures can affect our health,
+              it is utmost crucial to emphasize the significance of physical
+              activity and its positive impact on both mental and physical well
+              being.
             </p>
           </div>
         </div>
@@ -88,7 +92,7 @@ const Mentor = () => {
             <img src={dean} className="image"></img>
           </div>
           <div className="content">
-            <h2>Dr. A. R. Patil</h2>
+            <h2>Mr. S. B. Dethe</h2>
             <h2>Dean (Students Affairs), SGGSIE&T</h2>
             <p>
               Zenith is a state level sports event organized by the students of

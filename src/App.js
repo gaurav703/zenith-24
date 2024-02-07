@@ -2,15 +2,13 @@
 import "./App.css";
 // import Heropage from "./Components/heropage/heropage";
 // import About from "./Components/about/about";
-import Mentor from "./Components/MentorsPage/mentor.js";
-import Footer from "./Components/footer/Footer.jsx";
-import Footer2 from "./Components/footer2/footer2.jsx";
-import Loader from "./Components/loader/loader";
+// import Footer2 from "./Components/footer2/footer2.jsx";
+// import Loader from "./Components/loader/loader";
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router";
 import Homepage from "./Components/homepage/homepage";
 // import Footer from "./Components/footer/Footer.jsx";
-// import Event from "./Components/Event/Event.jsx";
+import Event from "./Components/Event/Event.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,10 +22,11 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={loading ? <Loader /> : <Homepage />}></Route>
+        <Route path="/" element=<Homepage />></Route>
+        <Route path="/events" element=<Event />></Route>
       </Routes>
-      <Mentor />
-      <Footer2 />
+      {/* <Mentor />
+      <Footer2 /> */}
       {/* <Footer /> */}
       {/* <Event /> */}
     </div>

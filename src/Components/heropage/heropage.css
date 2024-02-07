@@ -121,13 +121,16 @@
         height: 60px;
         /* background-color: transparent; */
     }
+
     .logo-black-inner-div {
         width: 100%;
         height: 100%;
     }
+
     .logo-black-inner-div h3 {
         font-size: 0.8rem;
     }
+
     .head-heading {
         position: static;
         width: 300px;
@@ -136,22 +139,26 @@
         right: 0;
         margin-top: 70px;
     }
+
     #player {
         position: static;
         width: 400px;
     }
+
     #ball {
         display: none;
         width: 80px;
         top: 50%;
         left: 70%;
     }
+
     .countdown {
         position: static;
         right: 0;
     }
+
     .heropage-main-div {
-        height: auto;   
+        height: auto;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -180,15 +187,18 @@
         height: 80px;
         margin-top: 80px;
     }
+
     .countdown {
         /* width: 200px; */
         /* height: 80px; */
         scale: 0.8;
         margin-top: -30px;
     }
+
     #player {
         width: 400px;
     }
+
     #ball {
         width: 50px;
         top: 42%;
@@ -206,13 +216,16 @@
     #ball {
         left: 80%;
     }
+
     #player {
         margin-top: 20px;
         /* margin-left: -50px; */
     }
+
     .countdown {
         /* margin-top: 20px; */
     }
+
     .head-heading {
         padding-top: 50px;
     }
