@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import "./timer.css";
 
 const Timer = (props) => {
   const [days, setDays] = useState(0);
@@ -26,7 +27,25 @@ const Timer = (props) => {
 
   return (
     <div className="timer">
-        <p><span>{days}</span> <span>{hours}</span> <span>{minutes}</span> <span>{seconds}</span></p>
+        <div className='timer-text'>
+          <p>THE <span>FINAL</span> COUNTDOWN</p>
+        </div>
+        <div className='timer-inner'>
+          <div className='timer-inner-contain'>
+            <div className='timer-words'>
+              <div><p>Days</p></div>
+              <div><p>Hours</p></div>
+              <div><p>Mins</p></div>
+              <div><p>Secs</p></div>
+            </div>
+            <div className='timer-time'>
+              <div><p>{days}</p></div>
+              <div><p>{hours}</p></div>
+              <div><p>{minutes}</p></div>
+              <div><p>{seconds}</p></div>
+            </div>
+          </div>
+        </div>
     </div>
   );
 };

@@ -24,7 +24,7 @@ export default function Heropage() {
         <img data-atropos-offset="20" id="ball" src={ball} alt="ball"></img>
       </Atropos>
       <div className="countdown">
-        <h2><Timer date="March 14 2024" /></h2>
+        <Timer date="March 14 2024" />
       </div>
     </div>
   );
