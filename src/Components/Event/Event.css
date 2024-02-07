@@ -14,6 +14,7 @@ body{
   flex-direction: column;
   flex-wrap: wrap;
   z-index: 0;
+
 }
 .wrapper {
   display: flex;
@@ -25,6 +26,15 @@ body{
   padding-left: 60px;
   padding-right: 60px;
   gap: 90px;
+}
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px); /* Adjust the blur amount as needed */
+  z-index: 100;
 }
 .heading{
   width: 100%;
@@ -183,7 +193,7 @@ body{
   opacity: 1;
   /* transition-delay: 0.5s ; */
 }
- .btn {
+ .btns .btn {
   padding: .2rem .3rem;
   border: 2px solid #FF8503;
   position: relative;

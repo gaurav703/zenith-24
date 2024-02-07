@@ -1,9 +1,10 @@
 
 
 .pop_up{
-    padding: 40px;
+   
+   padding: 30px ;
     width: 500px;
-    background: #fff;
+    background: linear-gradient(180deg, #707070 0%, #212020 76.26%);
     display: flex;
     align-items: center;
     gap: 5px;
@@ -35,24 +36,34 @@ transition: transform 0.5s,top 0.5s;
     cursor: pointer;
     
 }
-.pop_up .btn{
+.pop_up h3{
+    color: #fff;
+}
+.pop_up .btn33{
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+   justify-content: end;
 }
-.x{
-    border: none;
+.pop_up .btn33 .x{
+    border: red;
     outline: none;
     background: none;
     cursor: pointer;
     font-size: 1.9rem;
     color: red;
-    transition: .5s ease-in-out;
+    transition: .3s ease-in-out;
 }
 .x:hover{
     scale: 2;
 }
 
+.contact{
+    color: #fff;
+    font-size: 1rem;
+}
+.pop_up p{
+    color: #fff;
+}
 @media (max-width:650px){
    .pop_up{
     width: 400px;

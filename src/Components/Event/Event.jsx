@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./Event.css";
-// import cricket from "./cricket.jpg";
 import Model from "./Model";
-import Football from "../Images/foot.png";
-import chess from "../Images/chess.png";
-import volleyball from "../Images/volley.png";
-import cricketsvg from "../Images/cricket.png";
-import kabaddi from "../Images/kabaddi.png";
-import basketball from "../Images/basketball.svg";
-import basketball2 from "../Images/basket.png";
-import handball from "../Images/hand.png";
-import download from "../Images/download.png";
+import Football from "../images/foot.png";
+import chess from "../images/chess.png";
+import volleyball from "../images/volley.png";
+import cricketsvg from "../images/cricket.png";
+import kabaddi from "../images/kabaddi.png";
+import basketball from "../images/basketball.svg";
+import basketball2 from "../images/basket.png";
+import handball from "../images/hand.png";
+import download from "../images/download.png";
 
 const sportsData = [
   { image: cricketsvg, name: "Cricket", boys: "1200₹", girls: "1200₹" },
@@ -22,11 +21,13 @@ const sportsData = [
   { image: handball, name: "Handball", boys: "1200₹", girls: "1200₹" },
   { image: basketball2, name: "Basketball", boys: "1200₹", girls: "1200₹" },
 ];
+
 const Event = () => {
   const [Pop, setPop] = useState(false);
 
   return (
     <div className="main-container">
+      <div className={Pop ? "blur-background" : ""}></div>
       <div className="heading">
         <h1>Events</h1>
       </div>
