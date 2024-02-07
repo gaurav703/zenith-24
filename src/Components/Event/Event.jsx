@@ -10,7 +10,7 @@ import Model from "./Model";
 // // import basketball from "../Images/basketball.svg";
 // import basketball2 from "../Images/basket.png";
 // import handball from "../Images/hand.png";
-import download from "../Images/download.png";
+// import download from "../Images/download.png";
 import Navbar from "../navbar/navbar.jsx";
 import Footer from "../footer2/footer2.jsx";
 
@@ -99,7 +99,7 @@ const Event = () => {
                     View More
                   </button>
                   <button className="download">
-                    <img src={download}></img>
+                    <img src="../Images/download.png"></img>
                   </button>
                 </div>
               </div>
