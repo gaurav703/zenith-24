@@ -1,6 +1,6 @@
 import styles from "./footer2.module.css";
 import React from "react";
-// import logo from "../Images/logo.png";
+import logo from "../Images/logo.png";
 // import logo2 from "../Images/logo2.png";
 // import { Instagram } from "lucide-react";
 import { Mail } from "lucide-react";
@@ -12,11 +12,11 @@ const Footer2 = () => {
     <div className={styles.whole}>
       <div className={styles.up}>
         <div className={styles.left}>
-          {/* <img
-            src="../Images/logo.png"
+          <img
+            src="https://res.cloudinary.com/dqki29mbg/image/upload/v1707291436/Zenith-24/ithmtlwqpvjl5kjvvmcm.png"
             className={styles.img}
             alt="image"
-          ></img> */}
+          ></img>
         </div>
         <div className={styles.middle}>
           <div className={styles.middle1}>

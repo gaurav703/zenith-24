@@ -1,7 +1,7 @@
 .heropage-main-div {
     width: 100vw;
     height: 100vh;
-    /* background-image: url("../../Images/heropage_background.png"); */
+    background-image: url("../../Images/heropage_background.png");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -10,7 +10,7 @@
 .logo-black-div {
     width: 264px;
     height: 140px;
-    background: #060606;
+    : #060606;
     /* position: absolute; */
     top: 0;
     left: 0;

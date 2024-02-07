@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./mentor.css";
+import { dynamicImportWithRetry } from "@fatso83/retry-dynamic-import";
+
 // import director from "../Images/director.jpeg";
 // import dean from "../Images/dean.png";
 // import kadam from "../Images/kadam.jpg";
@@ -68,7 +70,10 @@ const Mentor = () => {
 
         <div className="section" ref={(el) => (sectionsRef.current[0] = el)}>
           <div className="bead">
-            <img src="../Images/director.jpeg" className="image"></img>
+            <img
+              src="https://res.cloudinary.com/dqki29mbg/image/upload/v1707291523/Zenith-24/gqrcstsml1yrdpq5sbmd.jpg"
+              className="image"
+            ></img>
           </div>
           <div className="content">
             <h2>DR. MANESH.B.KOKARE</h2>
@@ -89,7 +94,10 @@ const Mentor = () => {
 
         <div className="section" ref={(el) => (sectionsRef.current[1] = el)}>
           <div className="bead">
-            <img src="../Images/director.jpeg" className="image"></img>
+            <img
+              src="https://res.cloudinary.com/dqki29mbg/image/upload/v1707291523/Zenith-24/gqrcstsml1yrdpq5sbmd.jpg"
+              className="image"
+            ></img>
           </div>
           <div className="content">
             <h2>Mr. S. B. Dethe</h2>
@@ -107,7 +115,10 @@ const Mentor = () => {
 
         <div className="section" ref={(el) => (sectionsRef.current[2] = el)}>
           <div className="bead">
-            <img src="../Images/director.jpeg" className="image"></img>
+            <img
+              src="https://res.cloudinary.com/dqki29mbg/image/upload/v1707291527/Zenith-24/cb2ei7yn0klvfhjtqz9j.jpg"
+              className="image"
+            ></img>
           </div>
           <div className="content">
             <h2>Prof. Bhaskar Kadam</h2>

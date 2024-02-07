@@ -1,7 +1,7 @@
 import React from "react";
 import "./heropage.css";
-// import player from "../../Images/player.png";
-// import ball from "../../Images/ball.png";
+import player from "../../Images/player.png";
+import ball from "../../Images/ball.png";
 import { dynamicImportWithRetry } from "@fatso83/retry-dynamic-import";
 // import logo from "../../Images/logo.png";
 // import player from "https://res.cloudinary.com/dqki29mbg/image/upload/v1707291433/Zenith-24/d9ksa7t1vfabnekcm4yj.png";
