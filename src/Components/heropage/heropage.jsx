@@ -12,7 +12,7 @@ export default function Heropage() {
     <div className="heropage-main-div">
       <div className="logo-black-div">
         <div className="logo-black-inner-div">
-          <img src="../Images/logo.png" alt="logo" />
+          <img src={logo} alt="logo" />
           <h3>ZENITH</h3>
         </div>
       </div>

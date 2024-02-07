@@ -58,40 +58,35 @@
 .countdown {
     position: absolute;
     width: 347px;
-    height: 220px;
+    height: 240px;
     border-radius: 15px;
     /* background: #D9D9D966; */
-    background-image: url("../../Images/Group\ 247.png");
+    /* background-image: url("../../Images/Group\ 247.png");
     background-position: center;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
     top: 20%;
     right: 5%;
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 1.4rem;
-    color: black;
+    /* font-size: 1.4rem; */
     margin-bottom: 50px;
 }
 
-.countdown p {
+/* .countdown p {
     padding-left: 32px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     gap: 4px;
     margin-top: 135px;
-    /* background-color: antiquewhite; */
-}
+    background-color: antiquewhite;
+} */
 
-.countdown p span {
+/* .countdown p span {
     width: 60px;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .head-heading {
     width: 650px;
@@ -126,13 +121,16 @@
         height: 60px;
         /* background-color: transparent; */
     }
+
     .logo-black-inner-div {
         width: 100%;
         height: 100%;
     }
+
     .logo-black-inner-div h3 {
         font-size: 0.8rem;
     }
+
     .head-heading {
         position: static;
         width: 300px;
@@ -141,22 +139,26 @@
         right: 0;
         margin-top: 70px;
     }
+
     #player {
         position: static;
         width: 400px;
     }
+
     #ball {
         display: none;
         width: 80px;
         top: 50%;
         left: 70%;
     }
+
     .countdown {
         position: static;
         right: 0;
     }
+
     .heropage-main-div {
-        height: auto;   
+        height: auto;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -185,15 +187,18 @@
         height: 80px;
         margin-top: 80px;
     }
+
     .countdown {
         /* width: 200px; */
         /* height: 80px; */
         scale: 0.8;
         margin-top: -30px;
     }
+
     #player {
         width: 400px;
     }
+
     #ball {
         width: 50px;
         top: 42%;
@@ -211,13 +216,16 @@
     #ball {
         left: 80%;
     }
+
     #player {
         margin-top: 20px;
         /* margin-left: -50px; */
     }
+
     .countdown {
         /* margin-top: 20px; */
     }
+
     .head-heading {
         padding-top: 50px;
     }
