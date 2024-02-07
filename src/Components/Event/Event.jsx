@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Event.css";
 import Model from "./Model";
-import Football from "../Images/foot.png";
+// import Football from "../Images/foot.png";
 import chess from "../Images/chess.png";
 import volleyball from "../Images/volley.png";
 import cricketsvg from "../Images/cricket.png";
@@ -16,7 +16,7 @@ import Footer from "../footer2/footer2.jsx";
 
 const sportsData = [
   { image: cricketsvg, name: "Cricket", boys: "1200₹", girls: "1200₹" },
-  { image: Football, name: "Football", boys: "1200₹", girls: "1200₹" },
+  { image: Football2, name: "Football", boys: "1200₹", girls: "1200₹" },
   { image: Football2, name: "RingFootball", boys: "1200₹", girls: "1200₹" },
   { image: chess, name: "Chess", boys: "1200₹", girls: "1200₹" },
   { image: volleyball, name: "Volleyball", boys: "1200₹", girls: "1200₹" },
