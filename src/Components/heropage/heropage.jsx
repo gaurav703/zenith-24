@@ -1,8 +1,8 @@
 import React from "react";
 import "./heropage.css";
-// import player from "../../Images/player.png";
-// import ball from "../../Images/ball.png";
-// import logo from "../../Images/logo.png";
+import player from "https://res.cloudinary.com/dqki29mbg/image/upload/v1707291433/Zenith-24/d9ksa7t1vfabnekcm4yj.png";
+import ball from "https://res.cloudinary.com/dqki29mbg/image/upload/v1707291431/Zenith-24/hgmvpkfuisyqzzsprgo3.png";
+import logo from "https://res.cloudinary.com/dqki29mbg/image/upload/v1707291527/Zenith-24/rezgbpiqvujpjowazump.png";
 import Atropos from "atropos/react";
 import Timer from "../timer/timer";
 import zenithLogo from "../../Images/zenith_logo.png";
