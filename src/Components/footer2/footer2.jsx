@@ -12,11 +12,11 @@ const Footer2 = () => {
     <div className={styles.whole}>
       <div className={styles.up}>
         <div className={styles.left}>
-          <img
-            src="https://res.cloudinary.com/dqki29mbg/image/upload/v1707291436/Zenith-24/ithmtlwqpvjl5kjvvmcm.png"
+          {/* <img
+            src="../Images/logo.png"
             className={styles.img}
             alt="image"
-          ></img>
+          ></img> */}
         </div>
         <div className={styles.middle}>
           <div className={styles.middle1}>
