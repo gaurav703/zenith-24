@@ -1,6 +1,6 @@
 import styles from "./footer2.module.css";
 import React from "react";
-import logo from "../Images/logo.png";
+// import logo from "../Images/logo.png";
 // import logo2 from "../Images/logo2.png";
 // import { Instagram } from "lucide-react";
 import { Mail } from "lucide-react";

@@ -1,7 +1,7 @@
 import React from "react";
 import "./heropage.css";
-import player from "../../Images/player.png";
-import ball from "../../Images/ball.png";
+// import player from "../../Images/player.png";
+// import ball from "../../Images/ball.png";
 import { dynamicImportWithRetry } from "@fatso83/retry-dynamic-import";
 // import logo from "../../Images/logo.png";
 // import player from "https://res.cloudinary.com/dqki29mbg/image/upload/v1707291433/Zenith-24/d9ksa7t1vfabnekcm4yj.png";
@@ -9,7 +9,7 @@ import { dynamicImportWithRetry } from "@fatso83/retry-dynamic-import";
 // import logo from "https://res.cloudinary.com/dqki29mbg/image/upload/v1707291527/Zenith-24/rezgbpiqvujpjowazump.png";
 import Atropos from "atropos/react";
 import Timer from "../timer/timer";
-import zenithLogo from "../../Images/zenith_logo.png";
+// import zenithLogo from "../../Images/zenith_logo.png";/
 
 export default function Heropage() {
   return (
@@ -24,7 +24,7 @@ export default function Heropage() {
         </div>
       </div>
       <div className="head-heading">
-        <img src={zenithLogo} alt="zenithlogo" />
+        {/* <img src={zenithLogo} alt="zenithlogo" /> */}
       </div>
       <Atropos>
         <img
