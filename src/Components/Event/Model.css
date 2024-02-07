@@ -47,7 +47,8 @@ transition: transform 0.5s,top 0.5s;
 }
 .pop_up .btn33 .x{
     border: red;
-    outline: none;
+    /* outline: none; */
+        outline: none;
     background: none;
     cursor: pointer;
     font-size: 1.9rem;
