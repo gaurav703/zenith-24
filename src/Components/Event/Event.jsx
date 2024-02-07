@@ -76,51 +76,51 @@ const sportsData = [
 const Event = () => {
   const [Pop, setPop] = useState(false);
 
-  return (
-    <>
-      <Navbar />
-      <div className="main-container">
-        <div className={Pop ? "blur-background" : ""}></div>
-        <div className="heading">
-          <h1>Events</h1>
-        </div>
-        <div className="wrapper">
-          {sportsData.map((sport, index) => (
-            <div className="card1" key={index}>
-              <div className="img">
-                <img src={sport.image} alt="" />
-              </div>
-              <h2>{sport.name}</h2>
-              <div className="info">
-                <h2>{sport.name}</h2>
-                <p className="fees">Entry Fee: </p>
-                <div className="price">
-                  <p>
-                    Boys: ₹2500
-                    <br />
-                    Girls: X
-                  </p>{" "}
-                </div>
-
-                <div className="btns">
-                  <button className="btn" onClick={() => setPop(true)}>
-                    View More
-                  </button>
-                  <button className="download">
-                    <img src="../Images/foot.png"></img>
-                  </button>
-                </div>
-              </div>
+return (
+  <div className="main-container">
+    <div className={Pop ? "blur-background" : ""}></div>
+    <div className="heading">
+      <h1>Events</h1>
+    </div>
+    <div className="wrapper">
+      {sportsData.map((sport, index) => (
+        <div className="card1" key={index}>
+          <div className="img">
+            <img src={sport.image} alt="" />
+          </div>
+          <h2>{sport.name}</h2>
+          <div className="info">
+            <h2>{sport.name}</h2>
+            <p className="fees">Entry Fee: </p>
+            <div className="price">
+              <p>
+                {sport.boys}
+                <br />
+                {sport.girls}
+              </p>
             </div>
-          ))}
-          <div className="pop">
-            {Pop && <Model onClose={() => setPop(false)} />}
+            <div className="btns">
+              <button className="btn" onClick={() => handleViewMore(sport)}>
+                View More
+              </button>
+              <button
+                id="downloadBtn"
+                value="download"
+                className="download"
+                onClick={() => console.log("Download logic goes here")}
+              >
+                <img src={download} alt="Download" />
+              </button>
+            </div>
           </div>
         </div>
+      ))}
+      <div className="pop">
+        {Pop && <Model sport={selectedSport} onClose={() => setPop(false)} />}
       </div>
-      <Footer />
-    </>
-  );
+    </div>
+  </div>
+);
 };
 
 export default Event;
