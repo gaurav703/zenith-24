@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./Event.css";
 import Model from "./Model";
-import Football from "../images/foot.png";
-import chess from "../images/chess.png";
-import volleyball from "../images/volley.png";
-import cricketsvg from "../images/cricket.png";
-import kabaddi from "../images/kabaddi.png";
-import basketball2 from "../images/basket.png";
-import handball from "../images/hand.png";
-import download from "../images/download.png";
+import Football from "../Images/foot.png";
+import chess from "../Images/chess.png";
+import volleyball from "../Images/volley.png";
+import cricketsvg from "../Images/cricket.png";
+import kabaddi from "../Images/kabaddi.png";
+import basketball2 from "../Images/basket.png";
+import handball from "../Images/hand.png";
+import download from "../Images/download.png";
 
 const sportsData = [
   { image: cricketsvg, name: "Cricket", boys: "Boys : 1200₹", girls: "Girls : 1200₹",contact:"Vivek: 9359502953 , Gaurav : 9757398688" },
