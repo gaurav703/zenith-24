@@ -26,7 +26,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background: #fff;
+  background: #9d5757;
   min-height: 100vh;
   padding-left: 80px;
   padding-right: 80px;
@@ -73,6 +73,7 @@ body {
   width: 220px;
   height: 300px;
   background: linear-gradient(180deg, #707070 0%, #212020 76.26%);
+
   display: flex;
   justify-content: center;
   flex-direction: column;
