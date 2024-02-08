@@ -94,7 +94,7 @@ const sportsData = [
     contact2: "Shakib : 9960844980",
   },
 ];
-
+ 
 const Event = () => {
   const [Pop, setPop] = useState(false);
   const [selectedSport, setSelectedSport] = useState(null);
