@@ -68,15 +68,15 @@ const Mentor = () => {
 
         <div className="section" ref={(el) => (sectionsRef.current[0] = el)}>
           <div className="bead">
-            <img src="../Images/director.jpeg" className="image"></img>
+            <img src="../Images/football.png" className="image" alt="im1"></img>
           </div>
           <div className="content">
             <h2>DR. MANESH.B.KOKARE</h2>
             <h2 className="title2">Director, SGGSIE&T</h2>
             <p>
               ZENITH is an exhilarating State Level Sports event of SGGSIE&T,
-              it&apos;s a platform for every student to showcase their talents and
-              athletic skills. The beauty of it lies in its ability to bring
+              it&apos;s a platform for every student to showcase their talents
+              and athletic skills. The beauty of it lies in its ability to bring
               together the entire sports enthusiasts and student community,
               since it is completely organised by students. In an era where
               sedentary lifestyles and academic pressures can affect our health,

@@ -24,8 +24,11 @@ export default function Navbar() {
     <div className="navbar-main-div">
       <div className="logo-black-div">
         <div className="logo-black-inner-div">
-          <img src="../../Images/menu.png" alt="logo" />
-          <h3>ZENITH</h3>
+          <img
+            src="https://res.cloudinary.com/dqki29mbg/image/upload/v1707291527/Zenith-24/rezgbpiqvujpjowazump.png"
+            alt="logo"
+          />
+          {/* <h3>ZENITH</h3> */}
         </div>
       </div>
       <div className="navbar-inner-div">

@@ -17,13 +17,13 @@ export default function Heropage() {
         <img
           data-atropos-offset="-8"
           id="player"
-          src="../../Images/player.png"
+          src="https://res.cloudinary.com/dqki29mbg/image/upload/v1707291433/Zenith-24/d9ksa7t1vfabnekcm4yj.png"
           alt="player"
         ></img>
         <img
           data-atropos-offset="20"
           id="ball"
-          src="../../Images/player.png"
+          src="https://res.cloudinary.com/dqki29mbg/image/upload/v1707291431/Zenith-24/hgmvpkfuisyqzzsprgo3.png"
           alt="ball"
         ></img>
       </Atropos>

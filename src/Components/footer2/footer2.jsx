@@ -12,11 +12,11 @@ const Footer2 = () => {
     <div className={styles.whole}>
       <div className={styles.up}>
         <div className={styles.left}>
-          {/* <img
+          <img
             src="../Images/logo.png"
             className={styles.img}
-            alt="image"
-          ></img> */}
+            alt="imggg"
+          ></img>
         </div>
         <div className={styles.middle}>
           <div className={styles.middle1}>
