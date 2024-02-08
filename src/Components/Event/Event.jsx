@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Event.css";
 import Model from "./Model";
 import pdf from "./Zenith.pdf";
+import Navbar from "../navbar/navbar.jsx";
 
 const sportsData = [
   {
@@ -65,7 +66,7 @@ const sportsData = [
   },
   {
     image:
-      "https://res.cloudinary.com/dqki29mbg/image/upload/v1707415829/Event-Page/wapi2dnoivdrd4e3cofq.png",
+      "https://res.cloudinary.com/ddaxlm9yc/image/upload/v1707434615/ftfsvqgu2y026vsbt1ui.png",
     name: "Kho-Kho",
     boys: "Boys : 1200₹",
     // girls: "Girls : 1200₹",
@@ -94,7 +95,7 @@ const sportsData = [
     contact2: "Shakib : 9960844980",
   },
 ];
- 
+
 const Event = () => {
   const [Pop, setPop] = useState(false);
   const [selectedSport, setSelectedSport] = useState(null);
@@ -115,52 +116,58 @@ const Event = () => {
   }
 
   return (
-    <div className="main-container">
-      <div className={Pop ? "blur-background" : ""}></div>
-      <div className="heading">
-        <h1>Events</h1>
-      </div>
-      <div className="wrapper">
-        {sportsData.map((sport, index) => (
-          <div className="card1" key={index}>
-            <div className="img">
-              <img src={sport.image} alt="" />
-            </div>
-            <h2>{sport.name}</h2>
-            <div className="info">
+    <>
+      <Navbar />
+      <div className="main-container">
+        <div className={Pop ? "blur-background" : ""}></div>
+        <div className="heading">
+          <h1>Events</h1>
+        </div>
+        <div className="wrapper">
+          {sportsData.map((sport, index) => (
+            <div className="card1" key={index}>
+              <div className="img">
+                <img src={sport.image} alt="" />
+              </div>
               <h2>{sport.name}</h2>
-              <p className="fees">Entry Fee </p>
-              <div className="price">
-                <p>
-                  {sport.boys}
-                  <br />
-                  {sport.girls}
-                </p>
-              </div>
-              <div className="btns">
-                <button className="btn" onClick={() => handleViewMore(sport)}>
-                  View More
-                </button>
-                <button
-                  id="downloadBtn"
-                  value="download"
-                  className="download"
-                  onClick={() => download(pdf)}
-                >
-                  <img
-                    src="https://res.cloudinary.com/dqki29mbg/image/upload/v1707415831/Event-Page/bsomh2xhrbiuz6jpe9ah.png"
-                    alt="Download"
-                  />
-                </button>
+              <div className="info">
+                <h2>{sport.name}</h2>
+                <p className="fees">Entry Fee </p>
+                <div className="price">
+                  <p>
+                    {sport.boys}
+                    <br />
+                    {sport.girls}
+                  </p>
+                </div>
+                <div className="btns">
+                  <button className="btn" onClick={() => handleViewMore(sport)}>
+                    View More
+                  </button>
+                  <button
+                    id="downloadBtn"
+                    value="download"
+                    className="download"
+                    onClick={() => download(pdf)}
+                  >
+                    <img
+                      src="https://res.cloudinary.com/dqki29mbg/image/upload/v1707415831/Event-Page/bsomh2xhrbiuz6jpe9ah.png"
+                      alt="Download"
+                    />
+                  </button>
+                </div>
               </div>
             </div>
+          ))}
+          <div className="pop">
+            {Pop && (
+              <Model sport={selectedSport} onClose={() => setPop(false)} />
+            )}
           </div>
-        ))}
-        <div className="pop">
-          {Pop && <Model sport={selectedSport} onClose={() => setPop(false)} />}
         </div>
       </div>
-    </div>
+      {/* <Footer /> */}
+    </>
   );
 };
 
