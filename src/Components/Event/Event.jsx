@@ -63,36 +63,36 @@ const sportsData = [
     contact1: "Sushant Pradhan: 8836025310",
     contact2: "Nikul Jadhao : 8836025310",
   },
-  {
-    image:
-      "https://res.cloudinary.com/dqki29mbg/image/upload/v1707415829/Event-Page/wapi2dnoivdrd4e3cofq.png",
-    name: "Kho-Kho",
-    boys: "Boys : 1200₹",
-    // girls: "Girls : 1200₹",
-    //  contact: "Sushant Pradhan: 8836025310 , Nikul Jadhao : 8836025310",
-    contact1: "Gaurav Nayase: 7249849725",
-    // contact2: "Nikul Jadhao : 8836025310",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/dqki29mbg/image/upload/v1707415834/Event-Page/dsxvtc0pgyta5mpyprkt.png",
-    name: "Handball",
-    boys: "Boys : 1500₹",
-    girls: "Girls : 1200₹",
-    //contact: "Aniket Dharwar: 96733 52236 , Udedhan Sonawane : 8888964392",
-    contact1: "Aniket Dharwar: 96733 52236",
-    contact2: "Udedhan Sonawane : 8888964392",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/dqki29mbg/image/upload/v1707415833/Event-Page/apa36dxqwxmevwkgl5hl.png",
-    name: "Basketball",
-    boys: "Boys : 2500₹",
-    girls: "Girls : 2000₹",
-    // contact: "Dishant Sawwalakhe: 9699120082 , Shakib : 9960844980",
-    contact1: "Dishant Sawwalakhe: 9699120082",
-    contact2: "Shakib : 9960844980",
-  },
+  // {
+  //   image:
+  //     "https://res.cloudinary.com/dqki29mbg/image/upload/v1707415829/Event-Page/wapi2dnoivdrd4e3cofq.png",
+  //   name: "Kho-Kho",
+  //   boys: "Boys : 1200₹",
+  //   // girls: "Girls : 1200₹",
+  //   //  contact: "Sushant Pradhan: 8836025310 , Nikul Jadhao : 8836025310",
+  //   contact1: "Gaurav Nayase: 7249849725",
+  //   // contact2: "Nikul Jadhao : 8836025310",
+  // },
+  // {
+  //   image:
+  //     "https://res.cloudinary.com/dqki29mbg/image/upload/v1707415834/Event-Page/dsxvtc0pgyta5mpyprkt.png",
+  //   name: "Handball",
+  //   boys: "Boys : 1500₹",
+  //   girls: "Girls : 1200₹",
+  //   //contact: "Aniket Dharwar: 96733 52236 , Udedhan Sonawane : 8888964392",
+  //   contact1: "Aniket Dharwar: 96733 52236",
+  //   contact2: "Udedhan Sonawane : 8888964392",
+  // },
+  // {
+  //   image:
+  //     "https://res.cloudinary.com/dqki29mbg/image/upload/v1707415833/Event-Page/apa36dxqwxmevwkgl5hl.png",
+  //   name: "Basketball",
+  //   boys: "Boys : 2500₹",
+  //   girls: "Girls : 2000₹",
+  //   // contact: "Dishant Sawwalakhe: 9699120082 , Shakib : 9960844980",
+  //   contact1: "Dishant Sawwalakhe: 9699120082",
+  //   contact2: "Shakib : 9960844980",
+  // },
 ];
 
 const Event = () => {
