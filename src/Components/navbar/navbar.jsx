@@ -8,6 +8,31 @@ export default function Navbar() {
   const [c, setC] = useState(0);
   const [imgSrc, setImgSrc] = useState("../../Images/menu.png");
 
+  // const [ c, setC ] = useState(0);
+  // const [ imgSrc, setImgSrc ] = useState(menu);
+
+  const [prevScrollPosition, setPrevScrollPosition] = useState(0);
+  const [isScrollingDown, setIsScrollingDown] = useState(false);
+
+  const handleScroll = () => {
+    const currentScrollPosition = window.scrollY;
+    setIsScrollingDown(currentScrollPosition > prevScrollPosition);
+    setPrevScrollPosition(currentScrollPosition);
+    if (isScrollingDown) {
+      document.getElementById("navbar").style.top = "-80px";
+    }
+    else {
+      document.getElementById("navbar").style.top = "0px";
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPosition, handleScroll]);
+ 
   const handleMenu = () => {
     if (c === 0) {
       document.getElementById("menu-ul").style.display = "flex";

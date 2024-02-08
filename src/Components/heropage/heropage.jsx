@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./heropage.css";
 // import player from "../../Images/player.png";
 // import ball from "../../Images/ball.png";
@@ -12,9 +12,30 @@ import Timer from "../timer/timer";
 // import zenithLogo from "../../Images/zenith_logo.png";/
 
 export default function Heropage() {
+  const [prevScrollPosition, setPrevScrollPosition] = useState(0);
+  const [isScrollingDown, setIsScrollingDown] = useState(false);
+
+  const handleScroll = () => {
+    const currentScrollPosition = window.scrollY;
+    setIsScrollingDown(currentScrollPosition > prevScrollPosition);
+    setPrevScrollPosition(currentScrollPosition);
+    if (isScrollingDown) {
+      document.getElementById("zenith-logo-nav").style.top = "-160px";
+    }
+    else {
+      document.getElementById("zenith-logo-nav").style.top = "0px";
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPosition, handleScroll]);
   return (
     <div className="heropage-main-div">
-      <div className="logo-black-div">
+      <div id="zenith-logo-nav" className="logo-black-div">
         <div className="logo-black-inner-div">
           <img
             src="https://res.cloudinary.com/dqki29mbg/image/upload/v1707291527/Zenith-24/rezgbpiqvujpjowazump.png"

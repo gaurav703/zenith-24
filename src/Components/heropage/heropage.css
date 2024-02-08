@@ -9,6 +9,7 @@
 }
 
 .logo-black-div {
+    transition: top 0.3s;
     width: 264px;
     height: 140px;
     background: #060606;
