@@ -1,8 +1,8 @@
 import styles from "./footer2.module.css";
 import React from "react";
-// import logo from "../Images/logo.png";
-// import logo2 from "../Images/logo2.png";
-// import { Instagram } from "lucide-react";
+import logo from "../Images/logo.png";
+import logo2 from "../Images/logo2.png";
+import { Instagram } from "lucide-react";
 import { Mail } from "lucide-react";
 import { Phone } from "lucide-react";
 import { MapPin } from "lucide-react";
@@ -13,9 +13,9 @@ const Footer2 = () => {
       <div className={styles.up}>
         <div className={styles.left}>
           <img
-            src="../Images/logo.png"
+            src={logo}
             className={styles.img}
-            alt="imggg"
+            alt="image"
           ></img>
         </div>
         <div className={styles.middle}>

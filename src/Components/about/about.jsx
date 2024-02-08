@@ -23,7 +23,7 @@ export default function About() {
           </div>
       </div>
       <div >
-            <img src={sport} alt=""  className="img"/>
+            <img src="https://res.cloudinary.com/ddaxlm9yc/image/upload/v1707427953/jqmii8uwfiub5nlvadxy.png" alt=""  className="img"/>
           </div>
       </div>
   );

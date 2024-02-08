@@ -97,7 +97,6 @@ body {
   color: #100a08;
 }
 
-
 .section h2 {
   font-size: 20px;
 }
@@ -214,7 +213,7 @@ body {
   }
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .top-section h1 {
     font-size: 28px;
   }

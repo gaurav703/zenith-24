@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./mentor.css";
-// import director from "../Images/director.jpeg";
-// import dean from "../Images/dean.png";
-// import kadam from "../Images/kadam.jpg";
-// import reddy from "../Images/reddy.png";
+import director from "../Images/director.jpeg";
+import dean from "../Images/dean.png";
+import kadam from "../Images/kadam.jpg";
+import reddy from "../Images/reddy.png";
 
 const Mentor = () => {
   const sectionsRef = useRef([]);
@@ -68,7 +68,10 @@ const Mentor = () => {
 
         <div className="section" ref={(el) => (sectionsRef.current[0] = el)}>
           <div className="bead">
-            <img src="../Images/football.png" className="image" alt="im1"></img>
+            <img
+              src="https://res.cloudinary.com/ddaxlm9yc/image/upload/v1707427563/ltt5ip3eihim9adgqb8s.png"
+              className="image"
+            ></img>
           </div>
           <div className="content">
             <h2>DR. MANESH.B.KOKARE</h2>
@@ -86,10 +89,12 @@ const Mentor = () => {
             </p>
           </div>
         </div>
-
         <div className="section" ref={(el) => (sectionsRef.current[1] = el)}>
           <div className="bead">
-            <img src="../Images/director.jpeg" className="image"></img>
+            <img
+              src="https://res.cloudinary.com/ddaxlm9yc/image/upload/v1707427040/xb0fzgymcy3erxuaspzv.png"
+              className="image"
+            ></img>
           </div>
           <div className="content">
             <h2>Mr. S. B. Dethe</h2>
@@ -107,7 +112,10 @@ const Mentor = () => {
 
         <div className="section" ref={(el) => (sectionsRef.current[2] = el)}>
           <div className="bead">
-            <img src="../Images/director.jpeg" className="image"></img>
+            <img
+              src="https://res.cloudinary.com/ddaxlm9yc/image/upload/v1707427040/xb0fzgymcy3erxuaspzv.png"
+              className="image"
+            ></img>
           </div>
           <div className="content">
             <h2>Prof. Bhaskar Kadam</h2>
@@ -123,7 +131,7 @@ const Mentor = () => {
 
         <div className="section" ref={(el) => (sectionsRef.current[3] = el)}>
           <div className="bead">
-            <img src="../Images/director.jpeg" className="image"></img>
+            <img src={director} className="image"></img>
           </div>
           <div className="content">
             <h2>Late Prof. R. B. Reddy</h2>
