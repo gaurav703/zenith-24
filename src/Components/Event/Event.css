@@ -26,7 +26,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background: #9d5757;
+  /* background: #9d5757; */
   min-height: 100vh;
   padding-left: 80px;
   padding-right: 80px;

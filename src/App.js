@@ -21,11 +21,11 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Homepage />}></Route>
         <Route path="/events" element={<Event />}></Route>
-      </Routes> */}
-      <Event />
+      </Routes>
+      {/* <Event /> */}
       {/* <Mentor />
       <Footer2 /> */}
       {/* <Footer /> */}
