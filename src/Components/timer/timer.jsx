@@ -27,16 +27,16 @@ const Timer = (props) => {
 
   return (
     <div className="timer">
-      <div className="timer-text">
-        <p>
-          THE <span>FINAL</span> COUNTDOWN
-        </p>
-      </div>
-      <div className="timer-inner">
-        <div className="timer-inner-contain">
-          <div className="timer-words">
-            <div>
-              <p>Days</p>
+        {/* <div className='timer-text'>
+          <p>THE <span>FINAL</span> COUNTDOWN</p>
+        </div> */}
+        <div className='timer-inner'>
+          <div className='timer-inner-contain'>
+            <div className='timer-words'>
+              <div><p>Days</p></div>
+              <div><p>Hours</p></div>
+              <div><p>Mins</p></div>
+              <div><p>Secs</p></div>
             </div>
             <div>
               <p>Hours</p>
