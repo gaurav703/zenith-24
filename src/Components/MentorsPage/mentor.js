@@ -113,7 +113,7 @@ const Mentor = () => {
         <div className="section" ref={(el) => (sectionsRef.current[2] = el)}>
           <div className="bead">
             <img
-              src="https://res.cloudinary.com/ddaxlm9yc/image/upload/v1707427040/xb0fzgymcy3erxuaspzv.png"
+              src="https://res.cloudinary.com/dqki29mbg/image/upload/v1707291527/Zenith-24/cb2ei7yn0klvfhjtqz9j.jpg"
               className="image"
             ></img>
           </div>

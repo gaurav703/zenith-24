@@ -9,7 +9,7 @@
 
 .logo-black-div {
   width: 264px;
-  height: 140px;
+  height: 120px;
   background: #060606;
   /* position: absolute; */
   top: 0;
@@ -113,21 +113,26 @@
     left: 60%;
   }
 }
+
 @media (max-width: 1200px) {
   .head-heading {
     scale: 0.7;
     padding-top: 2rem;
   }
+
   .balls {
     display: none;
   }
+
   .countdown {
     top: 10%;
   }
+
   .head-heading {
     margin-left: 20px;
   }
-  #player{
+
+  #player {
     margin-left: -70px;
   }
 }
@@ -136,12 +141,14 @@
   .logo-black-div {
     /* clip-path: none; */
     width: 100px;
-    height: 60px;
+    height: 90px;
     /* background-color: transparent; */
   }
-#player{
+
+  #player {
     margin-left: 0;
   }
+
   .logo-black-inner-div {
     width: 100%;
     height: 100%;

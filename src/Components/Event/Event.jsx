@@ -3,6 +3,7 @@ import "./Event.css";
 import Model from "./Model";
 import pdf from "./Zenith.pdf";
 import Navbar from "../navbar/navbar.jsx";
+import Footer from "../footer2/footer2.jsx";
 
 const sportsData = [
   {
@@ -166,7 +167,7 @@ const Event = () => {
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

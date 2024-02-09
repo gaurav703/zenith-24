@@ -3,59 +3,93 @@ import React from "react";
 import logo from "../Images/logo.png";
 import logo2 from "../Images/logo2.png";
 import { Instagram } from "lucide-react";
+import { useState } from "react";
 import { Mail } from "lucide-react";
 import { Phone } from "lucide-react";
 import { MapPin } from "lucide-react";
+import { MessageCircleCode } from "lucide-react";
+import pdf from "../Event/Zenith.pdf";
 
 const Footer2 = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+  const [isHovered3, setIsHovered3] = useState(false);
+  const [isHovered4, setIsHovered4] = useState(false);
+
+  function download(pdfpath) {
+    const pdfUrl = pdfpath;
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "download";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
   return (
     <div className={styles.whole}>
       <div className={styles.up}>
         <div className={styles.left}>
-          <img
-            src={logo}
-            className={styles.img}
-            alt="image"
-          ></img>
+          <img src={logo} className={styles.img} alt="image"></img>
         </div>
         <div className={styles.middle}>
           <div className={styles.middle1}>
             <div className={styles.ul}>
               <div className={styles.links}>
-                <a href="#">HOME</a>
+                <a href="/">HOME</a>
               </div>
               <div className={styles.links}>
-                <a href="#">EVENT</a>
+                <a href="/events">EVENT</a>
               </div>
-              <div className={styles.links}>
+              {/* <div className={styles.links}>
                 <a href="#">OUR TEAM</a>
-              </div>
+              </div> */}
               <div className={styles.links}>
-                <a href="#">REGISTER</a>
+                <a href="/">REGISTER</a>
               </div>
             </div>
           </div>
-          <div className={styles.middle2}>View Brochure</div>
+          <div className={styles.middle2} onClick={() => download(pdf)}>
+            View Brochure
+          </div>
           <div className={styles.middle3}>
             <div className={styles.ulsocila}>
               <div>
-                <a href="https://www.instagram.com/zenith_sggs?igsh=djNob2lwbXg2aGdi">
-                  <Mail />
+                <a
+                  href="https://www.instagram.com/zenith_sggs?igsh=djNob2lwbXg2aGdi"
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                  style={{
+                    transform: isHovered
+                      ? "transformY(10px)"
+                      : "transformY(0px)",
+                  }}
+                >
+                  <Instagram color={isHovered ? "#ff8503" : "#fff"} />
                 </a>
               </div>
               <div>
-                <a href="mailto:zenith@sggs.ac.in">
-                  <Mail />
+                <a
+                  href="mailto:zenith@sggs.ac.in"
+                  onMouseEnter={() => setIsHovered2(true)}
+                  onMouseLeave={() => setIsHovered2(false)}
+                >
+                  <Mail color={isHovered2 ? "#ff8503" : "#fff"} />
                 </a>
               </div>
               <div>
-                <a href="https://sggszenith.in/tel:+919359502953">
-                  <Phone />
+                <a
+                  onMouseEnter={() => setIsHovered3(true)}
+                  onMouseLeave={() => setIsHovered3(false)}
+                >
+                  <Phone color={isHovered3 ? "#ff8503" : "#fff"} />
                 </a>
               </div>
               <div>
-                <a href="https://goo.gl/maps/qdH2ab7UjYGfyPJs6">
-                  <MapPin />
+                <a
+                  onMouseEnter={() => setIsHovered4(true)}
+                  onMouseLeave={() => setIsHovered4(false)}
+                >
+                  <MessageCircleCode color={isHovered4 ? "#ff8503" : "#fff"} />
                 </a>
               </div>
             </div>
