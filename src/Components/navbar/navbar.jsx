@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./navbar.css";
 import menu from "../../Images/menu.png";
 import close from "../../Images/closeMenu.png";
@@ -33,8 +33,7 @@ export default function Navbar() {
     setPrevScrollPosition(currentScrollPosition);
     if (isScrollingDown) {
       document.getElementById("navbar").style.top = "-80px";
-    }
-    else {
+    } else {
       document.getElementById("navbar").style.top = "0px";
     }
   };
@@ -45,7 +44,7 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPosition, handleScroll]);
- 
+
   const handleMenu = () => {
     if (c === 0) {
       document.getElementById("menu-ul").style.display = "flex";
