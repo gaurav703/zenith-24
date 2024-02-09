@@ -64,11 +64,19 @@
   border-radius: 7px;
 }
 
+@media screen and (max-width: 500px) {
+  .middle2 {
+    margin-top: 30px;
+  }
+
+}
+
 .middle2:hover {
   background-color: #ff8503;
   color: #fff;
   border: 3px solid #ff8503;
 }
+
 .hamb {
   display: none;
 }
@@ -76,6 +84,7 @@
 .logo-black-div {
   width: 200px;
 }
+
 .logoss {
   scale: 1.4;
   padding-bottom: 20px;
@@ -85,9 +94,11 @@
   .hamb {
     display: block;
   }
+
   .navbar-main-div {
     height: 65px;
   }
+
   #menu-logo {
     display: block;
     width: 30px;
@@ -128,6 +139,7 @@
     scale: 0.7;
     padding-top: 1.5rem;
   }
+
   .hamb {
     display: block;
   }
