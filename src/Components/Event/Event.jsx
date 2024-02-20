@@ -10,16 +10,74 @@ import basketball2 from "../images/basket.png";
 import handball from "../images/hand.png";
 import download from "../images/download.png";
 
+
 const sportsData = [
-  { image: cricketsvg, name: "Cricket", boys: "Boys : 1200₹", girls: "Girls : 1200₹",contact:"Vivek: 9359502953 , Gaurav : 9757398688" },
-  { image: Football, name: "Football",  boys: "Boys : 1200₹", girls: "Girls : 1200₹",contact:"Vivek: 9359502953 , Gaurav : 9757398688" },
-  { image: Football, name: "RingFootball", boys: "Boys : 1200₹", girls: "Girls : 1200₹",contact:"Vivek: 9359502953 , Gaurav : 9757398688" },
-  { image: chess, name: "Chess",  boys: " Quad : 1200₹", girls: "Solo : 1200₹" ,contact:"Vivek: 9359502953 , Gaurav : 9757398688"},
-  { image: volleyball, name: "Volleyball", boys: "Boys : 1200₹", girls: "Girls : 1200₹",contact:"Vivek: 9359502953 , Gaurav : 9757398688"},
-  { image: kabaddi, name: "Kabaddi",  boys: "Boys : 1200₹", girls: "Girls : 1200₹",contact:"Vivek: 9359502953 , Gaurav : 9757398688" },
-  { image: handball, name: "Handball", boys: "Boys : 1200₹", girls: "Girls : 1200₹",contact:"Vivek: 9359502953 , Gaurav : 9757398688" },
-  { image: basketball2, name: "Basketball", boys: "Boys : 1200₹", girls: "Girls : 1200₹",contact:"Vivek: 9359502953 , Gaurav : 9757398688" },
+  {
+    image: cricketsvg,
+    name: "Cricket",
+    boys: "Boys : 1200₹",
+    girls: "Girls : 1200₹",
+    rulebook:{kabaddi},
+    contact: "Vivek: 9359502953 , Gaurav : 9757398688",
+  },
+  {
+    image: Football,
+    name: "Football",
+    boys: "Boys : 1200₹",
+    girls: "Girls : 1200₹",
+    rulebook:{kabaddi},
+    contact: "Vivek: 9359502953 , Gaurav : 9757398688",
+  },
+  {
+    image: Football,
+    name: "RingFootball",
+    boys: "Boys : 1200₹",
+    girls: "Girls : 1200₹",
+    rulebook:{kabaddi},
+    contact: "Vivek: 9359502953 , Gaurav : 9757398688",
+  },
+  {
+    image: chess,
+    name: "Chess",
+    boys: " Quad : 1200₹",
+    girls: "Solo : 1200₹",
+    rulebook:{kabaddi},
+    contact: "Vivek: 9359502953 , Gaurav : 9757398688",
+  },
+  {
+    image: volleyball,
+    name: "Volleyball",
+    boys: "Boys : 1200₹",
+    girls: "Girls : 1200₹",
+    rulebook:{kabaddi},
+    contact: "Vivek: 9359502953 , Gaurav : 9757398688",
+  },
+  {
+    image: kabaddi,
+    name: "Kabaddi",
+    boys: "Boys : 1200₹",
+    girls: "Girls : 1200₹",
+    rulebook:{kabaddi},
+    contact: "Vivek: 9359502953 , Gaurav : 9757398688",
+  },
+  {
+    image: handball,
+    name: "Handball",
+    boys: "Boys : 1200₹",
+    girls: "Girls : 1200₹",
+    rulebook:{kabaddi},
+    contact: "Vivek: 9359502953 , Gaurav : 9757398688",
+  },
+  {
+    image: basketball2,
+    name: "Basketball",
+    boys: "Boys : 1200₹",
+    girls: "Girls : 1200₹",
+    rulebook:{kabaddi},
+    contact: "Vivek: 9359502953 , Gaurav : 9757398688",
+  },
 ];
+const url=""
 
 const Event = () => {
   const [Pop, setPop] = useState(false);
@@ -30,10 +88,11 @@ const Event = () => {
     setPop(true);
   };
 
+  
 
   return (
     <div className="main-container">
-       <div className={Pop ? "blur-background" : ""}></div>
+      <div className={Pop ? "blur-background" : ""}></div>
       <div className="heading">
         <h1>Events</h1>
       </div>
@@ -58,19 +117,16 @@ const Event = () => {
                 <button className="btn" onClick={() => handleViewMore(sport)}>
                   View More
                 </button>
-                <button
-                  id="downloadBtn"
-                  value="download"
-                  className="download"
-                  onClick={() => console.log("Download logic goes here")}
-                >
-                  <img src={download} alt="Download" />
-                </button>
+                <a href={kabaddi} target="_blank" className="download">
+                  <img src={download}></img>
+                </a>
               </div>
             </div>
           </div>
         ))}
-        <div className="pop">{Pop && <Model sport={selectedSport} onClose={() => setPop(false)} />}</div>
+        <div className="pop">
+          {Pop && <Model sport={selectedSport} onClose={() => setPop(false)} />}
+        </div>
       </div>
     </div>
   );
