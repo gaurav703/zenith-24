@@ -1,11 +1,11 @@
 import React from "react";
 import "./footer.css";
-import logo2 from "../images/logo2.png";
+import logo2 from "../Images/logo2.png";
 import { Instagram } from "lucide-react";
 import { Mail } from "lucide-react";
 import { Phone } from "lucide-react";
 import { MapPin } from "lucide-react";
-import map from "../images/map.png";
+// import map from "../images/map.png";
 
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 
